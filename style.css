@@ -112,7 +112,7 @@ grid-template-rows: minmax(auto, auto);
 .container .box {
 
 grid-column: unset !important; 
- grid-row: unset !mportant;
+ grid-row: unset !important;
 
 }
 }
