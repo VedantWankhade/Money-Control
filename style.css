@@ -41,7 +41,7 @@ grid-auto-flow: dense;
 
 .container .box {
 
-background: #fff;
+background: #333;
 
 padding: 20px;
 
@@ -52,7 +52,7 @@ font-size: 20px;
 place-items: center; 
   
   text-align:center; 
-  color:#333;
+  color:#fff;
 
 transition: 0.5s;
 }
@@ -112,7 +112,7 @@ grid-template-rows: minmax(auto, auto);
 .container .box {
 
 grid-column: unset !important; 
- grid-row: unset !important;
+ grid-row: unset !mportant;
 
 }
 }
