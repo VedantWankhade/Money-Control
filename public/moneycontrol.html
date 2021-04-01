@@ -69,5 +69,14 @@ science, but it needs a little conscience</p>
     </div>
    </div>
   </div>
+
+  <button id="go">Go</button>
+
+  <script>
+    const go = document.getElementById('go');
+    go.addEventListener('click', (e) => {
+      window.location.replace("http://localhost:5000/dashboard.html");
+    })
+  </script>
   </body>
 </html>
