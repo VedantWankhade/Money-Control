@@ -41,7 +41,7 @@ grid-auto-flow: dense;
 
 .container .box {
 
-background: #333;
+background: #fff;
 
 padding: 20px;
 
@@ -52,7 +52,7 @@ font-size: 20px;
 place-items: center; 
   
   text-align:center; 
-  color:#fff;
+  color:#333;
 
 transition: 0.5s;
 }
