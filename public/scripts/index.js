@@ -3,6 +3,27 @@ const loggedOutLinks = document.querySelectorAll('.logged-out');
 const loggedInLinks = document.querySelectorAll('.logged-in');
 const accountDetails = document.querySelectorAll('.account-details');
 
+const renderCard = (flag) => {
+    const card =  document.getElementById('pay-card');
+    if(flag)
+        card.style.display = 'block';
+    else card.style.display = 'none';
+}
+
+const renderHome = (flag) => {
+    const home = document.getElementById('home');
+    if (flag)
+        home.style.display = 'block';
+    else home.style.display = 'none';
+}
+
+const renderAdminControl = (flag) => {
+    const adminControl = document.getElementById('admin-control');
+    if (flag)
+        adminControl.style.display = 'block';
+    else adminControl.style.display = 'none';
+}
+
 const setupUI = user => {
 
     if (user) {

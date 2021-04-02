@@ -5,11 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>User Auth</title>
 </head>
-<body class="grey lighten-3">
+<body>       <!--class="grey lighten-3"-->
     
      <!-- NAVBAR -->
   <nav class="z-depth-0 grey lighten-4">
@@ -24,9 +23,6 @@
           </li>
           <li class="logged-in" style="display: none;">
             <a href="#" class="grey-text logout">Logout</a>
-          </li>
-          <li class="logged-in" style="display: none;">
-            <a href="#" class="grey-text modal-trigger" data-target="modal-pay">Pay</a>
           </li>
           <li class="logged-out" style="display: none;">
             <a href="#" class="grey-text modal-trigger" data-target="modal-login">Login</a>
@@ -45,9 +41,7 @@
           <li class="logged-in" style="display: none;">
             <a href="#" class="grey-text logout">Logout</a>
           </li>
-          <li class="logged-in" style="display: none;">
-            <a href="#" class="grey-text modal-trigger" data-target="modal-pay">Pay</a>
-          </li>
+          
           <li class="logged-out" style="display: none;">
             <a href="#" class="grey-text modal-trigger" data-target="modal-login">Login</a>
           </li>
@@ -93,6 +87,10 @@
         <div class="input-field">
           <input type="password" id="signup-password" required />
           <label for="signup-password">Choose password</label>
+        </div>
+        <div class="input-field">
+          <input type="text" id="signup-upi-id" required />
+          <label for="signup-username">UPI Id</label>
         </div>
         <div class="input-field">
           <input type="text" id="signup-refer-code" />
@@ -147,6 +145,20 @@
     </div>
   </div>
 
+<!-- Admin Control -->
+<div id='admin-control' class="container" style="display: none;">
+  <form id="make-admin-form">
+    <div class="input-field">
+      <input type="email" id="make-admin-email" required />
+      <label for="make-admin-email">Email address</label>
+    </div>
+    <button class="btn yellow darken-2 z-depth-0">Make Admin</button>
+  </form>
+</div>
+
+
+
+
 <!-- USER LIST -->
   <div class="container" style="margin-top: 40px;">
     <ul class="collapsible z-depth-0 users" style="border: none;">
@@ -168,6 +180,24 @@
       </li> -->
     </ul>
   </div>
+
+
+<div id="home" class="container" style="display: none;">
+  <div class="html-container" style="display: flex; justify-content: center;">
+
+    <embed type="text/html" src="./moneycontrol.html" height="1000px" width="900px">
+  
+  </div>
+</div>
+
+
+<main id='pay-card' class="container" style="display: none;">
+<div class="html-container" style="display: flex; justify-content: center;">
+
+  <embed type="text/html" src="./Premium.html" height="600px" width="400px">
+
+</div>
+</main>
 
 
   <!-- Firebase SDK -->
